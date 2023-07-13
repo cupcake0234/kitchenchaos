@@ -87,7 +87,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
 
     private void MoveHandler()
     {
-        transform.position += moveDistance * GetMoveDirection();//
+        transform.position += moveDistance * GetMoveDirection();
         //transform.forward = Vector3.Slerp(transform.forward, new Vector3(inputVector.x, 0, inputVector.y), rotateSpeed * Time.deltaTime);
         transform.forward = Vector3.Slerp(transform.forward, new Vector3(joystick.Horizontal, 0, joystick.Vertical), rotateSpeed * Time.deltaTime);
     }
