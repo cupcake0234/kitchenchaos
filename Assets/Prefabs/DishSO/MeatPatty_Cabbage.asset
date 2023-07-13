@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c34592b60d51ad4c8075dc7b24383e1, type: 3}
+  m_Name: MeatPatty_Cabbage
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1492423763561240125, guid: fbb0d209bd6193f4b9d5be9205fe0392, type: 3}
+  sprite: {fileID: 21300000, guid: 114b0da55051c094b90c77403aff838e, type: 3}
+  name: MeatPatty_Cabbage
+  containedKitchenObjectList:
+  - {fileID: 11400000, guid: 774fefab13901c647a8ca86b10c8031b, type: 2}
+  - {fileID: 11400000, guid: 50c1012c33f083444931ba59d3cebfcd, type: 2}
