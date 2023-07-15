@@ -20,11 +20,11 @@ public class BaseCounter : MonoBehaviour, IKitchenObjectParent
 
     public virtual void InteractOfButton_E(Player player)
     {
-        Debug.Log(gameObject.name + "BaseCounter Interact");
+        Debug.Log(gameObject.name + "BaseCounter Button E Interact");
     }
     public virtual void InteractOfButton_F(Player player)
     {
-        Debug.Log("BaseCounter Button F Interact");
+        Debug.Log(gameObject.name + "BaseCounter Button F Interact");
     }
 
     protected virtual void Start()

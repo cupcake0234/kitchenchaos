@@ -88,8 +88,8 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     private void MoveHandler()
     {
         transform.position += moveDistance * GetMoveDirection();
-        //transform.forward = Vector3.Slerp(transform.forward, new Vector3(inputVector.x, 0, inputVector.y), rotateSpeed * Time.deltaTime);
-        transform.forward = Vector3.Slerp(transform.forward, new Vector3(joystick.Horizontal, 0, joystick.Vertical), rotateSpeed * Time.deltaTime);
+        transform.forward = Vector3.Slerp(transform.forward, new Vector3(inputVector.x, 0, inputVector.y), rotateSpeed * Time.deltaTime);
+        //transform.forward = Vector3.Slerp(transform.forward, new Vector3(joystick.Horizontal, 0, joystick.Vertical), rotateSpeed * Time.deltaTime);
     }
     private void InteractHandler()
     {
@@ -118,9 +118,9 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     /// <returns></returns>
     private Vector3 GetMoveDirection()
     {
-        Vector3 moveDirection = new Vector3(joystick.Horizontal, 0, joystick.Vertical);
+        //Vector3 moveDirection = new Vector3(joystick.Horizontal, 0, joystick.Vertical);
 
-        //Vector3 moveDirection = new Vector3(inputVector.x, 0, inputVector.y);
+        Vector3 moveDirection = new Vector3(inputVector.x, 0, inputVector.y);
         if (!Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDirection, moveDistance))
         {
             return moveDirection;
